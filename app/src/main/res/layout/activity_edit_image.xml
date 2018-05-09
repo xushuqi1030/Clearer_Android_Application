@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_background1"
+    android:orientation="vertical">
+
+        <com.example.keeps_000.clearer.view.CutFixedImage300View
+            android:visibility="visible"
+            android:id="@+id/ivEditPicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/Layout_bottom1" />
+
+        <com.example.keeps_000.clearer.view.EditImageView
+            android:visibility="invisible"
+            android:id="@+id/ivEdit2Picture"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/Layout_bottom1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/Layout_bottom1"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+         >
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:weightSum="2"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:id="@+id/btn_yes"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textSize="20sp"
+                android:text="剪切" />
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn_no"
+                android:layout_weight="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/btn_yes"
+                android:textSize="20sp"
+                android:text="取消" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

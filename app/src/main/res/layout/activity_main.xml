@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/main_background1"
+    android:id="@+id/main_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/kps"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_setting"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/kps"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="100dp">
+            <TextView
+                android:text="  Clearer"
+                android:textSize="100px"
+                android:textColor="#ef3800"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_above="@+id/kpiwhat"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/send_pictures"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg_blue"
+                        android:text="多图处理"
+                        android:drawableLeft="@drawable/btn_pictures_deal"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40px" />
+
+                    <Button
+                        android:id="@+id/take_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg_pink"
+                        android:text="相机取材"
+                        android:drawableLeft="@drawable/btn_camera"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40px"/>
+
+                    <Button
+                        android:id="@+id/use_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg_orange"
+                        android:text="相册取材"
+                        android:drawableLeft="@drawable/btn_blum"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40px"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/my_pictures"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg_purple"
+                        android:text="我的图片"
+                        android:drawableLeft="@drawable/btn_products"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40px"/>
+
+                    <Button
+                        android:id="@+id/about_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg_green"
+                        android:text="关于我们"
+                        android:drawableLeft="@drawable/btn_us"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40px"/>
+
+                    <Button
+                        android:id="@+id/btn_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="后悔有期"
+                        android:drawableLeft="@drawable/btn_out"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40px"
+                        android:background="@drawable/btn_bg_gray" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kpiwhat"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+            <Button
+                android:id="@+id/btn_high_camera"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_camera2"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

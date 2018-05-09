@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.keeps_000.clearer.activity.AboutUsActivity">
+
+    <RelativeLayout
+        android:background="@mipmap/main_background1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_back_3"
+            android:drawableLeft="@drawable/btn_back"
+            android:background="#00000000"
+            android:layout_width="100dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/text_title_2"
+            android:text="关于Clearer"
+            android:textSize="45px"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <RelativeLayout
+            android:id="@+id/ic_view"
+            android:layout_below="@+id/text_title_2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/image_ic_view"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_above="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="19dp"
+                android:background="@mipmap/icon_clearer_touming"
+                android:foregroundGravity="center" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="11dp"
+                android:textSize="30px"
+                android:textStyle="bold"
+                android:text="Clearer 1.0.0" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_how_to_use"
+            android:layout_below="@+id/ic_view"
+            android:background="#ffffff"
+            android:text="      功能介绍"
+            android:textSize="45px"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_team"
+            android:layout_below="@+id/btn_how_to_use"
+            android:background="#ffffff"
+            android:text="      开发团队"
+            android:textSize="45px"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_fankui"
+            android:layout_below="@+id/btn_team"
+            android:background="#ffffff"
+            android:text="      出错反馈： 15980927287"
+            android:textSize="45px"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/text11"
+                android:text="Shiney 版权所有"
+                android:gravity="center"
+                android:textColor="#666363"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_below="@+id/text11"
+                android:id="@+id/text111"
+                android:text="Copyright © 2018 Shiney."
+                android:gravity="center"
+                android:textColor="#666363"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_below="@+id/text111"
+                android:text="All Rights Reserved."
+                android:gravity="center"
+                android:textColor="#666363"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

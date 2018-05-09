@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.keeps_000.clearer.activity.FunctionIntroduceActivity">
+
+    <RelativeLayout
+        android:background="@mipmap/main_background1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_back_4"
+            android:drawableLeft="@drawable/btn_back"
+            android:background="#00000000"
+            android:layout_width="100dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/text_title_3"
+            android:text="功能介绍"
+            android:textSize="45px"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <RelativeLayout
+            android:id="@+id/ic_view"
+            android:layout_below="@+id/text_title_3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/image_ic_view"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_above="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="19dp"
+                android:background="@mipmap/icon_clearer_touming"
+                android:foregroundGravity="center" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="11dp"
+                android:textSize="30px"
+                android:textStyle="bold"
+                android:text="Clearer 1.0.0" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textno1"
+            android:text="   1.多图处理："
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/ic_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/textno1_"
+            android:textSize="45px"
+            android:gravity="center_vertical"
+            android:text="        从相册中选取并编辑一张或多张图片发送至服务器进行清晰化处理。"
+            android:layout_below="@+id/textno1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/textno2"
+            android:text="   2.相机取材："
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/textno1_"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/textno2_"
+            android:textSize="45px"
+            android:gravity="center_vertical"
+            android:text="        拍照后编辑获得的照片后进行离线的清晰化处理。"
+            android:layout_below="@+id/textno2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/textno3"
+            android:text="   3.相册取材："
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/textno2_"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/textno3_"
+            android:textSize="45px"
+            android:gravity="center_vertical"
+            android:text="        从相册中选取并编辑一张图片进行离线的清晰化处理。"
+            android:layout_below="@+id/textno3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/textno4"
+            android:text="   4.我的图片："
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/textno3_"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/textno4_"
+            android:textSize="45px"
+            android:gravity="center_vertical"
+            android:text="        在这里可以查看清晰化过的所有照片。"
+            android:layout_below="@+id/textno4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
